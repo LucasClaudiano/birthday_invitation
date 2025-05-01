@@ -27,6 +27,9 @@
         flex-direction: column;
         text-align: center;
 
+        @media(max-width: 640px){
+            padding-top: 30px;
+        }
         &__button{
             margin-top: 44vh;
             display: flex;
@@ -37,6 +40,14 @@
             background-color: transparent;
             cursor:auto;
             text-align: center;
+
+        @media(max-width: 640px){
+            margin-top: 25vh;;
+        }
+        @media (min-height:768px) and (max-width:1024px){
+            padding-top: 15vw ;
+            font-size: 2vh;
+        }
         }
     }
     &__title, &__subtitle, &__text{
@@ -48,6 +59,17 @@
     .container{
         position: relative;
     }
+    @media (max-width:640px){
+        background-size: cover;
+        background-position: right 30% bottom ;
+        align-items: center;
+    }
+    @media (min-height:768px) and (max-width:1024px){
+        background-size: cover;
+        background-position: right 35% bottom;
+        font-size: 1.7vh;
+        padding-top: 10em;
+    }
     
 }
 
@@ -56,6 +78,10 @@
     width: 75px;
     height: 65px;
     cursor: pointer;
+    @media (min-height:768px) and (max-width:1024px){
+        width: 100px;
+        height: 90px;
+    }
 
     &:hover {
     
